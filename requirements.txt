@@ -6,7 +6,6 @@ PyPDF2
 chromadb
 faiss-cpu
 langchain_google_genai
-OS
 langchain_community
 langchain_core
 beautifulsoup
