@@ -1,0 +1,14 @@
+# Exported from Render on 2024-05-09T17:53:33Z
+services:
+- type: web
+  name: CHATBOT
+  runtime: python
+  repo: https://github.com/MAIRImanar/CHATBOT
+  plan: free
+  envVars:
+  - key: GOOGLE_API_KEY
+    sync: false
+  region: oregon
+  buildCommand: pip install -r requirements.txt
+  startCommand: streamlit run CHATbot.py --server.port 8080
+version: "1"
