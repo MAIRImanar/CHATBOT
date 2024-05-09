@@ -120,7 +120,7 @@ def main():
     )
 
     # Sidebar for uploading PDF files
-    pdf_paths = ["Banque_AR.pdf", "Banque_AR.pdf"]  # Modify this line with the paths to your PDFs
+    pdf_paths = ["Banque_FR.pdf", "Banque_AR.pdf"]  # Modify this line with the paths to your PDFs
     raw_text = get_pdf_text(pdf_paths)  # Fetch text directly from the PDF files
     text_chunks = get_text_chunks(raw_text)
     get_vector_store(text_chunks)
