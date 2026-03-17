@@ -1,15 +1,6 @@
 # 🤖 E16 Banking Chatbot
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python" />
-  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
-  <img src="https://img.shields.io/badge/Google_Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white" />
-  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" />
-  <img src="https://img.shields.io/badge/FAISS-Vector_Store-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-</p>
-
-<p align="center">
   <b>An intelligent bilingual chatbot (FR/AR) that answers banking questions using your own PDF documents, powered by Google Gemini AI and RAG (Retrieval-Augmented Generation).</b>
 </p>
 
@@ -17,21 +8,6 @@
   🌐 <a href="https://chatbot-fp5h.onrender.com/">Live Demo</a>
 </p>
 
----
-
-## 📋 Table of Contents
-
-- [Overview](#-overview)
-- [Features](#-features)
-- [Architecture](#-architecture)
-- [Tech Stack](#-tech-stack)
-- [Getting Started](#-getting-started)
-- [Environment Variables](#-environment-variables)
-- [Docker Deployment](#-docker-deployment)
-- [Project Structure](#-project-structure)
-- [How It Works](#-how-it-works)
-
----
 
 ## 🌟 Overview
 
@@ -45,17 +21,17 @@ If the answer cannot be found in the documents, the bot falls back to Gemini Pro
 
 | Feature | Description |
 |---|---|
-| 🧠 **RAG Pipeline** | Retrieval-Augmented Generation for accurate, document-grounded answers |
-| 🌍 **Bilingual Support** | Works with both French (`Banque_FR.pdf`) and Arabic (`Banque_AR.pdf`) documents |
-| 💬 **Chat History** | Maintains conversation context across multiple turns |
-| 🔄 **Smart Fallback** | Falls back to Gemini Pro general knowledge when context is unavailable |
-| 📄 **PDF Parsing** | Automatically extracts and indexes PDF content at startup |
-| 🐳 **Docker Ready** | Fully containerized for easy deployment |
-| ☁️ **Cloud Deployed** | Live on Render.com |
+|  **RAG Pipeline** | Retrieval-Augmented Generation for accurate, document-grounded answers |
+|  **Bilingual Support** | Works with both French (`Banque_FR.pdf`) and Arabic (`Banque_AR.pdf`) documents |
+|  **Chat History** | Maintains conversation context across multiple turns |
+|  **Smart Fallback** | Falls back to Gemini Pro general knowledge when context is unavailable |
+|  **PDF Parsing** | Automatically extracts and indexes PDF content at startup |
+|  **Docker Ready** | Fully containerized for easy deployment |
+|  **Cloud Deployed** | Live on Render.com |
 
 ---
 
-## 🏗 Architecture
+##  Architecture
 ```
 User Query
     │
@@ -85,7 +61,7 @@ User Query
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - **[Streamlit](https://streamlit.io/)** — Web UI framework
 - **[Google Gemini Pro](https://deepmind.google/technologies/gemini/)** — LLM for response generation
@@ -97,7 +73,7 @@ User Query
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -129,18 +105,18 @@ The app will be available at `http://localhost:8501`
 
 ---
 
-## 🔐 Environment Variables
+##  Environment Variables
 
 Create a `.env` file in the root directory:
 ```env
 GOOGLE_API_KEY=your_google_generative_ai_api_key_here
 ```
 
-> ⚠️ Never commit your `.env` file. It is already listed in `.gitignore`.
+>  Never commit your `.env` file. It is already listed in `.gitignore`.
 
 ---
 
-## 🐳 Docker Deployment
+##  Docker Deployment
 
 ### Using Docker
 ```bash
