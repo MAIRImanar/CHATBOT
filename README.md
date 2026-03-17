@@ -151,7 +151,7 @@ chatbot/
 
 ---
 
-## ⚙️ How It Works
+##  How It Works
 
 1. **Startup** — The app loads `Banque_FR.pdf` and `Banque_AR.pdf`, extracts all text, splits it into overlapping chunks (10,000 chars, 1,000 overlap), and stores them in a FAISS vector index.
 
@@ -163,13 +163,13 @@ chatbot/
 
 ---
 
-## 📄 License
+##  License
 
 This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-## 👥 Team — Groupe E16
+##  Team — Groupe E16
 
 | # | Nom | Prénom | Groupe | GitHub |
 |---|-----|--------|--------|--------|
