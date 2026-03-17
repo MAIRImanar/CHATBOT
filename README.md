@@ -33,9 +33,9 @@ If the answer cannot be found in the documents, the bot falls back to Gemini Pro
 
 ##  Architecture
 ```
-User Query
-    │
-    ▼
+            User Query
+               │
+               ▼
 ┌─────────────────────────────────┐
 │         Streamlit UI            │
 └──────────────┬──────────────────┘
